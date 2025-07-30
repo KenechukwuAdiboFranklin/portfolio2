@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - GamerKen</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="lis">
+            <div class="logo">KenStore 🔥🔥</div>
+            <li style="text-decoration: none;" class="lisItem"><a href="index.html">Home</a></li>
+            <li style="text-decoration: none;" class="lisItem"><a href="index.html">Shop</a></li>
+            <li style="text-decoration: none;" class="lisItem">Features</li>
+            <li style="text-decoration: none;" class="lisItem">Blog</li>
+            <li style="text-decoration: none;" class="lisItem">About</li>
+        </ul>
+        <div class="b11" style="display: flex; gap: 10px;">
+            <button class="b1"><a href="cart.html" style="text-decoration: none; color: white;"> Cart</a></button>
+            <button class="b1"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
+        </div>
+    </nav>
+    <div class="weldiv">
+        <h1 class="welcome">Welcome to KenStore 🔥🔥</h1>
+    </div>
+    <div class="filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="furniture">Furniture</button>
+        <button class="filter-btn" data-category="groceries">Food</button>
+        <button class="filter-btn" data-category="beauty">Beauty</button>
+        <button class="filter-btn" data-category="fragrances">Fragrances</button>
+    </div>
+
+    <section>
+        <h1>Products</h1>
+        <div id="productsContainer"></div>
+    </section>
+
+    <script src="ecommerce.js"></script>
+</body>
+
+</html>

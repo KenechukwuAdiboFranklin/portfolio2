@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="lis">
+            <li class="lisItem"><a href="index.html">Home</a></li>
+            <li class="lisItem"><a href="shop.html">Shop</a></li>
+            <li class="lisItem">Features</li>
+            <li class="lisItem">Blog</li>
+            <li class="lisItem">About</li>
+        </ul>
+        <div class="b11" style="display: flex; gap: 10px;">
+            <button class="b1"><a href="cart.html" style="text-decoration: none; color: white;"> Cart</a></button>
+            <button class="b1"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
+        </div>
+    </nav>
+
+    <h1>Your Cart <span id="items-no"></span></h1>
+
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th style="margin-left:7rem ;">Item</th>
+                <th style="margin-left:7rem ;">Price</th>
+                <th style="margin-left:7rem ;">Quantity</th>
+                <th style="margin-left:7rem ;">Total</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+    </table>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

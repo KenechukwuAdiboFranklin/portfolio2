@@ -1,0 +1,166 @@
+body {
+    color: #fff;
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    height: 60px;
+}
+
+.custom-navbar {
+    background-color: #1f1f2e;
+    padding: 1rem;
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.sl {
+    background-color: #00ff99;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.sec1,
+.sec2 {
+    padding: 4rem 2rem;
+    background-color: #121212;
+}
+
+.contentlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    list-style-type: none;
+}
+
+.content button {
+    background-color: #00ff99;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 320px;
+    background-color: #1e1e2e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    /* initially hidden */
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+
+/* Optional hover enhancement */
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #50505d;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #00ff99;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.card-content .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00ff99;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.newsArticle {
+    display: inline-block;
+    background-color: #2e2e3e;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.trendStory {
+    color: #00ff99;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.para {
+    color: #00ff99;
+}
+
+.instructions p {
+    color: #00ff99;
+}
+
+.toggle-btn {
+    background-color: #000;
+    color: #00ff99;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+
+/* 🔥 FADE-IN ANIMATION */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
